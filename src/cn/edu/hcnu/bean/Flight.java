@@ -10,6 +10,10 @@ public class Flight {
     private String destinationAirport;//目的地
     private String departureTime;//离开时间
 
+    public Flight(String id, String flightId, String planeType, String currentSeatsNum,
+                  String departureAirPort, String destinationAirport, String departureTime) {
+    }
+
 
     public String getId() {
         return id;
@@ -17,6 +21,14 @@ public class Flight {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getFlightId() {
+        return flightId;
+    }
+
+    public void setFlightId(String flightId) {
+        this.flightId = flightId;
     }
 
     public String getPlaneType() {
@@ -57,13 +69,5 @@ public class Flight {
 
     public void setDepartureTime(String departureTime) {
         this.departureTime = departureTime;
-    }
-
-    public String getFlightId() {
-        return flightId;
-    }
-
-    public void setFlightId(String flightId) {
-        this.flightId = flightId;
     }
 }
